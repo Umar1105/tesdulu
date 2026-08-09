@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Umar Zaid Ridwan | Security Researcher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="logo">UZR<span class="dot">.</span></div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#stats">Stats</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" onclick="closeMobile()">About</a></li>
+      <li><a href="#stats" onclick="closeMobile()">Stats</a></li>
+      <li><a href="#experience" onclick="closeMobile()">Experience</a></li>
+      <li><a href="#research" onclick="closeMobile()">Research</a></li>
+      <li><a href="#contact" onclick="closeMobile()">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="about">
+    <div class="hero-content">
+      <div class="hero-tag"><span class="mono"></span> Penetration Tester · Security Researcher · Bug Bounty Hunter</div>
+      <h1>Umar Zaid<br><span class="accent">Ridwan</span></h1>
+      <p class="hero-desc">
+        Security researcher and penetration tester specializing in browser security, 
+        mobile application vulnerabilities, UXSS, origin spoofing, and download security. 
+        Active bug bounty hunter across HackerOne, Bugcrowd, HackenProof, and Meta.
+      </p>
+      <div class="hero-btns">
+        <a href="#experience" class="btn-primary">View Experience</a>
+        <a href="mailto:umarzaidridwan11@gmail.com" class="btn-outline">Hire Me</a>
+      </div>
+      <div class="hero-tags">
+        <span>Browser Security</span>
+        <span>UXSS</span>
+        <span>Origin Spoofing</span>
+        <span>Mobile Security</span>
+        <span>Pentest</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="terminal-title">umar@security ~</span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="t-green">$</span> whoami</p>
+          <p class="out">Umar Zaid Ridwan</p>
+          <p class="out">Subang, Jawa Barat, Indonesia</p>
+          <p><span class="t-green">$</span> cat top_findings.txt</p>
+          <p class="out t-yellow">$$$$ · Flow Wallet UXSS</p>
+          <p class="out t-yellow">$$$$ · Meta Address Bar Spoof</p>
+          <p class="out t-yellow">$$$$ · Meta FB iOS Spoof</p>
+          <p class="out t-yellow">$$$$ · Arc Browser File Injection</p>
+          <p class="out t-yellow">$$$  · 3CX Stored HTML to XSS</p>
+          <p><span class="t-green">$</span> cat platforms.txt</p>
+          <p class="out">HackerOne · Bugcrowd · HackenProof · Meta</p>
+          <p class="out blink">_</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section id="stats" class="bg-alt full-width">
+    <div class="inner">
+      <div class="section-header">
+        <span class="mono label">02 / STATISTICS</span>
+        <h2>By The Numbers</h2>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-num" id="bugs">0</div>
+          <div class="stat-label">Valid Reports</div>
+          <div class="stat-bar"><div class="stat-fill" data-w="85"></div></div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num" id="bounty">$$$$$</div>
+          <div class="stat-label">Total Bounty Earned</div>
+          <div class="stat-bar"><div class="stat-fill" data-w="70"></div></div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num" id="cve">0</div>
+          <div class="stat-label">CVEs Assigned</div>
+          <div class="stat-bar"><div class="stat-fill" data-w="40"></div></div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num" id="programs">0</div>
+          <div class="stat-label">Bug Bounty Programs</div>
+          <div class="stat-bar"><div class="stat-fill" data-w="60"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-header">
+      <span class="mono label">03 / EXPERIENCE</span>
+      <h2>Bug Bounty Reports</h2>
+    </div>
+
+    <!-- HackerOne -->
+    <div class="program-block">
+      <div class="program-header">
+        <div class="program-name">
+          <span class="program-dot h1"></span>
+          HackerOne
+        </div>
+      </div>
+      <div class="reports-grid">
+        <div class="report-card">
+          <div class="report-top">
+            <span class="company-name">3CX</span>
+            <span class="reward-badge green">$$$</span>
+          </div>
+          <p>Stored HTML to XSS vulnerability allowing persistent script injection.</p>
+          <div class="report-tags"><span>XSS</span><span>Stored</span></div>
+        </div>
+        <div class="report-card">
+          <div class="report-top">
+            <span class="company-name">Chainlink</span>
+            <span class="reward-badge green">$$$</span>
+          </div>
+          <p>Missing email verification vulnerability in authentication flow.</p>
+          <div class="report-tags"><span>Auth</span><span>Bypass</span></div>
+        </div>
+        <div class="report-card featured-report">
+          <div class="report-top">
+            <span class="company-name">Arc Browser</span>
+            <span class="reward-badge green">$$$$</span>
+          </div>
+          <p>Abuse of showDirectoryPicker() API leading to malicious file injection into user filesystem.</p>
+          <div class="report-tags"><span>Browser</span><span>File System</span><span>API Abuse</span></div>
+        </div>
+        <div class="report-card">
+          <div class="report-top">
+            <span class="company-name">Magic Eden</span>
+            <span class="reward-badge green">$$$</span>
+          </div>
+          <p>UXSS vulnerability in Android application WebView allowing cross-origin script execution.</p>
+          <div class="report-tags"><span>UXSS</span><span>Android</span><span>WebView</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bugcrowd -->
+    <div class="program-block">
+      <div class="program-header">
+        <div class="program-name">
+          <span class="program-dot bc"></span>
+          Bugcrowd
+        </div>
+      </div>
+      <div class="reports-grid">
+        <div class="report-card">
+          <div class="report-top">
+            <span class="company-name">Opera Beta Android</span>
+            <span class="reward-badge green">$$$</span>
+          </div>
+          <p>APK spoofing vulnerability in download menu enabling malicious app installation.</p>
+          <div class="report-tags"><span>Android</span><span>Download</span><span>Spoofing</span></div>
+        </div>
+        <div class="report-card">
+          <div class="report-top">
+            <span class="company-name">Opera Mini Android</span>
+            <span class="reward-badge green">$$$</span>
+          </div>
+          <p>External protocol prompt origin confusion allowing attacker to impersonate trusted apps.</p>
+          <div class="report-tags"><span>Origin Confusion</span><span>Protocol</span></div>
+        </div>
+        <div class="report-card">
+          <div class="report-top">
+            <span class="company-name">Opera GX Android</span>
+            <span class="reward-badge green">$$$</span>
+          </div>
+          <p>Address bar UI bypass enabling login form spoofing within the browser.</p>
+          <div class="report-tags"><span>Address Bar</span><span>UI Spoof</span></div>
+        </div>
+        <div class="report-card">
+          <div class="report-top">
+            <span class="company-name">Opera Android</span>
+            <span class="reward-badge green">$$$</span>
+          </div>
+          <p>Incognito mode external protocol origin spoofing bypass.</p>
+          <div class="report-tags"><span>Incognito</span><span>Origin Spoof</span></div>
+        </div>
+        <div class="report-card">
+          <div class="report-top">
+            <span class="company-name">Opera Android</span>
+            <span class="reward-badge green">$$$</span>
+          </div>
+          <p>Prompt origin spoofing via cross-origin iframe manipulation.</p>
+          <div class="report-tags"><span>iframe</span><span>UXSS</span><span>Origin Spoof</span></div>
+        </div>
+        <div class="report-card">
+          <div class="report-top">
+            <span class="company-name">Opera Android</span>
+            <span class="reward-badge green">$$$</span>
+          </div>
+          <p>Download security UI bypass leading to origin spoofing in download confirmation dialog.</p>
+          <div class="report-tags"><span>Download</span><span>UI Bypass</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HackenProof -->
+    <div class="program-block">
+      <div class="program-header">
+        <div class="program-name">
+          <span class="program-dot hp"></span>
+          HackenProof
+        </div>
+      </div>
+      <div class="reports-grid">
+        <div class="report-card featured-report">
+          <div class="report-top">
+            <span class="company-name">Flow Wallet</span>
+            <span class="reward-badge green">$$$$</span>
+          </div>
+          <p>Universal Cross-Site Scripting (UXSS) vulnerability in Android in-app browser via javascript: URI sandbox bypass, enabling credential phishing inside the official wallet application.</p>
+          <div class="report-tags"><span>UXSS</span><span>WebView</span><span>Crypto Wallet</span><span>Critical</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Other Programs -->
+    <div class="program-block">
+      <div class="program-header">
+        <div class="program-name">
+          <span class="program-dot other"></span>
+          Other Programs
+        </div>
+      </div>
+      <div class="reports-grid">
+        <div class="report-card featured-report">
+          <div class="report-top">
+            <span class="company-name">Meta (Facebook)</span>
+            <span class="reward-badge green">$$$$</span>
+          </div>
+          <p>Address bar spoofing vulnerability leading to credential theft via timing attack in iOS in-app browser.</p>
+          <div class="report-tags"><span>Address Bar</span><span>iOS</span><span>Phishing</span></div>
+        </div>
+        <div class="report-card featured-report">
+          <div class="report-top">
+            <span class="company-name">Meta (Facebook iOS)</span>
+            <span class="reward-badge green">$$$$</span>
+          </div>
+          <p>Facebook iOS in-app browser spoofing vulnerability allowing attacker-controlled content to appear under trusted domains.</p>
+          <div class="report-tags"><span>iOS</span><span>WebView</span><span>Spoofing</span></div>
+        </div>
+        <div class="report-card">
+          <div class="report-top">
+            <span class="company-name">Orion Browser</span>
+            <span class="reward-badge green">$$$$</span>
+          </div>
+          <p>RTLO (Right-to-Left Override) spoofing vulnerability on macOS enabling filename deception.</p>
+          <div class="report-tags"><span>RTLO</span><span>macOS</span><span>Unicode</span></div>
+        </div>
+        <div class="report-card">
+          <div class="report-top">
+            <span class="company-name">Orion Browser</span>
+            <span class="reward-badge green">$$</span>
+          </div>
+          <p>Link preview spoofing via long URL encoding hiding true destination domain from users.</p>
+          <div class="report-tags"><span>Link Preview</span><span>URL Spoof</span></div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- RESEARCH -->
+  <section id="research" class="bg-alt full-width">
+    <div class="inner">
+      <div class="section-header">
+        <span class="mono label">04 / RESEARCH</span>
+        <h2>Areas of Expertise</h2>
+      </div>
+      <div class="research-grid">
+        <div class="research-card">
+          <div class="research-tag tag-active">ACTIVE</div>
+          <div class="research-icon">🧪</div>
+          <h3>Penetration Testing</h3>
+          <p>Web application and mobile application penetration testing. Vulnerability assessment across web platforms, APIs, and browser environments.</p>
+          <div class="research-meta">
+            <span>Web AppSec</span><span>Mobile</span><span>API</span><span>Burp Suite</span>
+          </div>
+        </div>
+        <div class="research-card">
+          <div class="research-tag tag-high">MEDIUM</div>
+          <div class="research-icon">🌐</div>
+          <h3>Browser Security Research</h3>
+          <p>Security research in major browsers including Arc, Opera, Samsung Browser, Orion, And Other. Specializing in address bar spoofing and UI deception.</p>
+          <div class="research-meta">
+            <span>Arc</span><span>Opera</span><span>Other</span>
+          </div>
+        </div>
+        <div class="research-card">
+          <div class="research-tag tag-critical">HIGH</div>
+          <div class="research-icon">⚡</div>
+          <h3>Cross-Site Scripting (XSS & UXSS)</h3>
+          <p>Universal XSS and stored XSS research across web applications, mobile browsers, and crypto wallet WebViews. javascript: URI sandbox bypass techniques.</p>
+          <div class="research-meta">
+            <span>UXSS</span><span>Stored XSS</span><span>WebView</span><span>Sandbox</span>
+          </div>
+        </div>
+        <div class="research-card">
+          <div class="research-tag tag-high">MEDIUM</div>
+          <div class="research-icon">🔗</div>
+          <h3>Origin Spoofing</h3>
+          <p>Origin verification bypass in browsers, in-app WebViews, and crypto wallets. Cross-origin prompt spoofing via iframe manipulation, protocol confusion, and RTL characters.</p>
+          <div class="research-meta">
+            <span>iframe</span><span>RTL</span><span>Protocol</span><span>Wallet</span>
+          </div>
+        </div>
+        <div class="research-card">
+          <div class="research-tag tag-high">MEDIUM</div>
+          <div class="research-icon">📥</div>
+          <h3>Download Security</h3>
+          <p>Dangerous file download behaviors including .url extension exploitation, APK spoofing, filename manipulation, and arbitrary local file read via OS-level resolution bypass.</p>
+          <div class="research-meta">
+            <span>Chrome</span><span>APK Spoof</span><span>File Read</span><span>CVE</span>
+          </div>
+        </div>
+        <div class="research-card">
+          <div class="research-tag tag-medium">LOW</div>
+          <div class="research-icon">🔤</div>
+          <h3>RTLO / Unicode Attacks</h3>
+          <p>Right-to-Left Override (RTLO) and RTL Unicode character abuse for filename spoofing, browser address bar manipulation, and PWA install prompt deception.</p>
+          <div class="research-meta">
+            <span>RTLO</span><span>RTL/LTR</span><span>PWA</span><span>Punycode</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-header">
+      <span class="mono label">05 / CONTACT</span>
+      <h2>Get In Touch</h2>
+    </div>
+    <div class="contact-wrap">
+      <p class="contact-desc">
+        Open to security research collaborations, responsible disclosure discussions, 
+        and penetration testing engagements. Based in Subang, Jawa Barat, Indonesia.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:umarzaidridwan11@gmail.com" class="contact-card">
+          <span class="contact-icon">✉️</span>
+          <div>
+            <div class="contact-label">Email</div>
+            <div class="contact-val">umarzaidridwan11@gmail.com</div>
+          </div>
+        </a>
+        <a href="http://www.linkedin.com/in/umarzaidridwan" class="contact-card" target="_blank">
+          <span class="contact-icon">💼</span>
+          <div>
+            <div class="contact-label">LinkedIn</div>
+            <div class="contact-val">linkedin.com/in/umarzaidridwan</div>
+          </div>
+        </a>
+        <a href="https://hackerone.com/benjaim_qa" class="contact-card" target="_blank">
+          <span class="contact-icon">🏆</span>
+          <div>
+            <div class="contact-label">HackerOne</div>
+            <div class="contact-val">hackerone.com/umarzr</div>
+          </div>
+        </a>
+        <a href="https://bugcrowd.com/h/PeachNull" class="contact-card" target="_blank">
+          <span class="contact-icon">🐛</span>
+          <div>
+            <div class="contact-label">Bugcrowd</div>
+            <div class="contact-val">bugcrowd.com/h/PeachNull</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <span class="logo">UZR<span class="dot">.</span></span>
+      <span>© 2026 Umar Zaid Ridwan · Penetration Tester & Security Researcher</span>
+      <a href="#about" class="back-top">↑ Top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
