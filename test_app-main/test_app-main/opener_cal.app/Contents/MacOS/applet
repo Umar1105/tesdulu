@@ -1,3 +1,0 @@
-#!/bin/bash
-
-open -a C:\\Windows\\system32\\calc.exe
