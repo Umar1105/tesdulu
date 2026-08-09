@@ -478,6 +478,7 @@ section {
 }
 
 /* ===== BOUNTY ===== */
+#bounty { background: var(--bg2); max-width: 100%; padding: 100px 6%; }
 #bounty .section-header { max-width: 1400px; margin: 0 auto 60px; }
 
 .bounty-grid {
@@ -602,6 +603,14 @@ section {
 }
 
 .contact-icon { font-size: 24px; }
+
+.contact-card img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
 
 .contact-label {
   font-size: 11px;
@@ -807,14 +816,13 @@ footer span:not(.logo):not(.dot) {
 .t-yellow { color: var(--yellow); }
 
 
-/* Fix broken images */
-img { display: none !important; }
-img[src]:not([src='']):not([src='undefined']) { display: block !important; }
-.stat-card img, .stat-card.featured img { display: none !important; }
-
-
-/* Hide any broken/unwanted images in stat cards */
+/* Hide images only in stat cards */
 .stat-card img,
 .stats-grid img {
   display: none !important;
+}
+
+/* Show images in contact cards */
+.contact-card img {
+  display: block !important;
 }
