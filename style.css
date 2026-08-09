@@ -478,7 +478,6 @@ section {
 }
 
 /* ===== BOUNTY ===== */
-#bounty { background: var(--bg2); max-width: 100%; padding: 100px 6%; }
 #bounty .section-header { max-width: 1400px; margin: 0 auto 60px; }
 
 .bounty-grid {
